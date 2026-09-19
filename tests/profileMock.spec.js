@@ -29,5 +29,6 @@ test.describe('Profile page response mock', () => {
 
     await expect(page.getByText('Mocked')).toBeVisible();
     await expect(page.getByText('User')).toBeVisible();
+    await page.screenshot({ path: 'mocked-profile.png' });
   });
 });
